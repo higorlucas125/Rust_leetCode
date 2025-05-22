@@ -1,12 +1,9 @@
-// use crate::twoSum::three_sum;
-use crate::palindrome::palindrome;
-// use crate::romanNumerals::romanNumerals;
-use crate::longest_common_prefix::logest_prefix;
-// mod twoSum; 
-mod palindrome;
-// mod romanNumerals;
-mod longest_common_prefix;
-
+use ChallangeLeetcode::{
+    palindrome::palindrome,
+    romanNumerals::romanNumerals,
+    longest_common_prefix::logest_prefix,
+    valid_parentheses::valid_parentheses
+};
 
 fn main() {
 
@@ -14,6 +11,9 @@ fn main() {
 //    let newDataThree = three_sum(vec![3,4,7,3,7,3], 9);
    let is_palindrome: bool = palindrome(121);
    let string_now = logest_prefix(vec!["aaa".to_string(), "aa".to_string(), "aaa".to_string()]);
+   let palindrome = valid_parentheses("({})".to_string());
+
+   println!(" > {:?}", palindrome);
 //   let string_now = logest_prefix(vec!["a".to_string()]);
 //   let string_now = logest_prefix(vec!["aa".to_string(),"aa".to_string()]);
 
