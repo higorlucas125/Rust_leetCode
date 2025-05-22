@@ -1,6 +1,6 @@
-pub fn palindrome(x:i32) -> bool{
-    let mut index = x;
-    let mut palindrome = 0;
+pub fn palindrome(x:i64) -> bool{
+    let mut index: i64 = x;
+    let mut palindrome: i64 = 0;
 
     if x < 0 {
         return false
